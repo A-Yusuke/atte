@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// use Illuminate\Support\Facades\DB;
 
 class AttendanceController extends Controller
 {
@@ -24,3 +25,7 @@ class AttendanceController extends Controller
         return view('attendance');
     }
 }
+
+// [
+//             'attendance' => DB::table('attendance')->paginate(5)
+//         ]
